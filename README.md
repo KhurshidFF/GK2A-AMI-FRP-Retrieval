@@ -23,7 +23,7 @@ The general FRP processing workflow is:
 7. Calculate pixel-level FRP.
 8. Export the results to CSV.
 
-The current implementation follows a Wooster-style mid-infrared radiance approach. :contentReference[oaicite:0]{index=0}
+The current implementation follows a Wooster-style mid-infrared radiance approach. 
 
 ---
 
@@ -64,7 +64,7 @@ a_AMI        = AMI-specific MIR coefficient
 σ            = Stefan-Boltzmann constant
 ```
 
-FRP is reported in **MW**. :contentReference[oaicite:1]{index=1}
+FRP is reported in **MW**. 
 
 ---
 
@@ -82,7 +82,7 @@ The current workflow uses the following GK2A products:
 
 The main FRP calculation is based on **SW038 radiance**.
 
-IR112 is used for additional brightness-temperature information and diagnostics rather than directly in the FRP equation. :contentReference[oaicite:2]{index=2}
+IR112 is used for additional brightness-temperature information and diagnostics rather than directly in the FRP equation. 
 
 ---
 
@@ -108,8 +108,7 @@ The default minimum number of valid background pixels is:
 8
 ```
 
-The median SW038 radiance of the valid surrounding pixels is used as the local background radiance. :contentReference[oaicite:3]{index=3}
-
+The median SW038 radiance of the valid surrounding pixels is used as the local background radiance. 
 ---
 
 ## Atmospheric Transmittance
@@ -128,7 +127,7 @@ The value can be changed using the command-line option:
 --tau
 ```
 
-This parameter should be considered when performing sensitivity analysis or comparing FRP values with other satellite products. :contentReference[oaicite:4]{index=4}
+This parameter should be considered when performing sensitivity analysis or comparing FRP values with other satellite products. 
 
 ---
 
@@ -197,7 +196,7 @@ python gk2a_frp.py \
   --tau 1.0
 ```
 
-The default background windows and other processing parameters can therefore be modified for sensitivity testing. :contentReference[oaicite:5]{index=5}
+The default background windows and other processing parameters can therefore be modified for sensitivity testing. 
 
 ---
 
@@ -327,9 +326,9 @@ daynight
 kfs_associated
 ```
 
-FRP values are reported in **MW**, while brightness temperatures are reported in **K**. :contentReference[oaicite:6]{index=6}
+FRP values are reported in **MW**, while brightness temperatures are reported in **K**. 
 
-Event-level FRP time series can be generated later by grouping the pixel detections by acquisition time and summing the individual pixel FRP values. :contentReference[oaicite:7]{index=7}
+Event-level FRP time series can be generated later by grouping the pixel detections by acquisition time and summing the individual pixel FRP values. 
 
 ---
 
